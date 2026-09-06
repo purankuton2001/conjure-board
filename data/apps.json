@@ -1,0 +1,40 @@
+{
+  "castconjure": {
+    "id": "castconjure",
+    "name": "castconjure",
+    "repo": "purankuton2001/castconjure",
+    "url": "https://github.com/purankuton2001/castconjure",
+    "tagline": "Your own virtual idol, generated, not lip-synced",
+    "angle": "clips",
+    "color": "#6247e6",
+    "builtWith": "Claude Fable 5.1",
+    "replyProviders": ["anthropic", "gemini", "openai"],
+    "firstExperience": "\"dance!!\" → noticed in 0.2 s → dancing 6 s later",
+    "showcase": "Measured latency and consistency, fal numbers, two-layer overlay",
+    "audience": "Creators with an OC, H3 / ComfyUI people, fal / MiniMax",
+    "redditEntry": ["r/StableDiffusion (pipeline)", "r/VirtualYoutubers"],
+    "weaknesses": ["Female presets only", "Local backend has no seed support"],
+    "sessionLog": "data/logs/session-*.jsonl",
+    "personaFormat": "data/personas/<id>",
+    "accentParam": "?accent="
+  },
+  "ai-oshibloom": {
+    "id": "ai-oshibloom",
+    "name": "AI OshiBloom",
+    "repo": "purankuton2001/ai-oshibloom",
+    "url": "https://github.com/purankuton2001/ai-oshibloom",
+    "tagline": "Bring your AI idol on air",
+    "angle": "studio + live",
+    "color": "#d4467a",
+    "builtWith": "GPT-6",
+    "replyProviders": ["openai", "fal"],
+    "firstExperience": "Five comments for a first stream, from \"Introduce yourself\" to \"Wave with a smile\"",
+    "showcase": "Studio UI, continuous live (H3 Max Director) demo, honest measurement logs",
+    "audience": "First-time AI VTuber makers, UI-first people, developers curious about continuous generation",
+    "redditEntry": ["r/VirtualYoutubers (first stream)", "r/aivideo (continuous live)"],
+    "weaknesses": ["Director capped at 120 s", "Voice consistency not guaranteed", "Director cost is outside the in-app meter"],
+    "sessionLog": "JSONL export (parity item, see strategy/parity.md)",
+    "personaFormat": "persona folder",
+    "accentParam": "studio theme color"
+  }
+}

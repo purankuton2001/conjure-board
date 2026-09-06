@@ -1,0 +1,73 @@
+name: Stream report
+description: You streamed with your own original character on castconjure or AI OshiBloom. Report it to get on the Conjure Board.
+title: "Stream report: [idol name] on [app]"
+labels: [stream-report]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A person checks every report before it appears on the Board (weekly at first). Numbers come second; the four pledges come first.
+        Field names below are read by a script — please keep the structure.
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options: [castconjure, AI OshiBloom]
+    validations: { required: true }
+  - type: input
+    id: stream_url
+    attributes: { label: Stream URL, description: "YouTube stream URL (archive is fine)", placeholder: "https://www.youtube.com/watch?v=..." }
+    validations: { required: true }
+  - type: input
+    id: persona
+    attributes: { label: Persona, description: "Your idol's name. Add the persona folder after a slash if you'd like it bundled as a template later.", placeholder: "Yui Shirotsume / personas/shirotsume-yui" }
+    validations: { required: true }
+  - type: input
+    id: accent
+    attributes: { label: Accent color, description: "Hex color for the Gallery card (castconjure ?accent= value, OshiBloom studio theme color)", placeholder: "#8f7bff" }
+  - type: textarea
+    id: session_log
+    attributes:
+      label: Session log
+      description: "castconjure: attach data/logs/session-*.jsonl (remove keys). OshiBloom: the JSONL export. Drag the file here."
+      render: text
+    validations: { required: true }
+  - type: input
+    id: reply_model
+    attributes: { label: Reply model, description: "The LLM that wrote the replies during the stream", placeholder: "gemini-2.5-flash / gpt-6 / claude-fable-5-1" }
+    validations: { required: true }
+  - type: input
+    id: code_model
+    attributes: { label: Code model, description: "If you modified the app with a model, which one (optional)" }
+  - type: input
+    id: clip
+    attributes: { label: Clip, description: "Your best reaction, 15 s or less (YouTube URL; Shorts is fine)" }
+  - type: input
+    id: duration
+    attributes: { label: Duration (minutes) }
+  - type: input
+    id: director_cost
+    attributes: { label: Director cost (USD), description: "AI OshiBloom only: continuous-live cost is outside the in-app meter, so please self-report it" }
+  - type: dropdown
+    id: external
+    attributes:
+      label: Is this someone else's character?
+      description: "Answer yes only if you are reporting on behalf of the character's owner, with their permission."
+      options: ["no", "yes"]
+    validations: { required: true }
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pledges
+      options:
+        - label: This is my own original character (not a real person, idol, group or existing character, and not "made to look like" one)
+          required: true
+        - label: The "AI generated" label was on screen for the whole stream
+          required: true
+        - label: I turned on the platform's synthetic-content disclosure for this stream
+          required: true
+        - label: The character is an adult
+          required: true
+  - type: textarea
+    id: notes
+    attributes: { label: Notes, description: "Anything the Board should know (optional)" }

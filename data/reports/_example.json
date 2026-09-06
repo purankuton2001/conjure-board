@@ -1,0 +1,26 @@
+{
+  "id": "2026-09-21-example",
+  "date": "2026-09-21",
+  "status": "pending",
+  "app": "castconjure",
+  "external": false,
+  "streamer": { "name": "example", "handle": "@example", "url": "https://x.com/example" },
+  "persona": { "name": "Yui Shirotsume", "folder": "personas/shirotsume-yui", "accent": "#8f7bff", "bundled": false },
+  "stream_url": "https://www.youtube.com/watch?v=XXXXXXXXXXX",
+  "clip_url": "https://www.youtube.com/watch?v=YYYYYYYYYYY",
+  "models": { "reply": "gemini-2.5-flash", "code": "Claude Fable 5.1" },
+  "metrics": {
+    "reactions": 0,
+    "acks": 0,
+    "median_latency_ms": null,
+    "p90_latency_ms": null,
+    "cost_usd": 0,
+    "director_cost_usd": null,
+    "views": null,
+    "peak_concurrent": null,
+    "duration_min": 60
+  },
+  "checks": { "own_oc": true, "ai_label": true, "platform_disclosure": true, "adult": true },
+  "issue": null,
+  "notes": ""
+}

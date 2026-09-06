@@ -1,0 +1,19 @@
+{
+  "measuredAt": "2026-09-06",
+  "spec": "data/spec/REQUIREMENTS-v0.8.md",
+  "note": "Both apps render video with fal's MiniMax H3. Differences on screen come only from the reply text, the action direction, latency and product decisions. No model company, fal or MiniMax sponsors either app.",
+  "rows": [
+    { "label": "Commits",             "castconjure": "40 (3 days)",              "ai-oshibloom": "1" },
+    { "label": "Server-side code",    "castconjure": "3,218 lines",              "ai-oshibloom": "588 lines" },
+    { "label": "Client-side code",    "castconjure": "749 lines",                "ai-oshibloom": "6,840 lines" },
+    { "label": "Tests",               "castconjure": "10",                       "ai-oshibloom": "18" },
+    { "label": "Continuous live",     "castconjure": "Measured, then declined",  "ai-oshibloom": "Implemented and shipped" },
+    { "label": "Reply providers",     "castconjure": "anthropic / gemini / openai", "ai-oshibloom": "openai / fal" },
+    { "label": "Written by",          "castconjure": "Claude Fable 5.1",         "ai-oshibloom": "GPT-6" }
+  ],
+  "streams": [
+    { "id": "2",  "title": "Stream #2 (matched)",  "design": "castconjure replies with Fable 5.1, OshiBloom replies with GPT-6. Code and replies from the same model. Viewer vote + JSONL.", "status": "planned", "week": "W3", "vote": null },
+    { "id": "2b", "title": "Stream #2b (swapped)", "design": "Only the reply model is swapped: GPT-6 on castconjure, Fable 5.1 on OshiBloom. Separates 'is the difference the code or the replies'. Falls back to article #3 if there is no time.", "status": "planned", "week": "W3 or W5", "vote": null },
+    { "id": "xr", "title": "Cross review",          "design": "PRs to castconjure are reviewed by GPT models, PRs to OshiBloom by Claude models. 'Built with / Reviewed with' from the PR template is tallied monthly.", "status": "ongoing", "week": "monthly", "vote": null }
+  ]
+}

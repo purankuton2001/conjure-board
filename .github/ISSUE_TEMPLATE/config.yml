@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: castconjure bugs and features
+    url: https://github.com/purankuton2001/castconjure/issues
+    about: Issues about the castconjure app itself
+  - name: AI OshiBloom bugs and features
+    url: https://github.com/purankuton2001/ai-oshibloom/issues
+    about: Issues about the AI OshiBloom app itself

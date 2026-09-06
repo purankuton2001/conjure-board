@@ -1,0 +1,34 @@
+[
+  {
+    "id": "first-conjure",
+    "name": "First Conjure",
+    "sub": "First stream",
+    "condition": "1 accepted stream report",
+    "reward": "Name, idol, app and clip on the Board; a post from the official X account",
+    "rule": { "reports": 1 }
+  },
+  {
+    "id": "fan-chant",
+    "name": "Fan Chant",
+    "sub": "100 reactions or 1,000 views",
+    "condition": "100 cumulative reactions, or 1,000 views in one stream",
+    "reward": "Pinned to the top of the Board; Gallery entry with the idol's accent color",
+    "rule": { "reactionsTotal": 100, "viewsSingle": 1000 }
+  },
+  {
+    "id": "comeback",
+    "name": "Comeback",
+    "sub": "3 streams",
+    "condition": "3 accepted stream reports",
+    "reward": "If wanted, the idol ships as a bundled template in that app; one paragraph and a GIF in the README's Featured section",
+    "rule": { "reports": 3 }
+  },
+  {
+    "id": "encore",
+    "name": "Encore",
+    "sub": "One idol per month",
+    "condition": "Most reactions in the month, across both apps",
+    "reward": "The official X pinned post for a month, first slot in the Gallery, a 5-question interview on the site, priority for the next invite stream",
+    "rule": { "monthlyTop": true }
+  }
+]
