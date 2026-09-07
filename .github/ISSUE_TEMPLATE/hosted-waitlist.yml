@@ -5,12 +5,17 @@ labels: [waitlist]
 body:
   - type: markdown
     attributes:
-      value: Nothing is built yet. This only counts interest. You can submit without filling anything in.
+      value: Nothing is built yet. This only counts interest. You can submit without filling anything in. 日本語で構いません。
   - type: dropdown
     id: app
     attributes:
       label: Which app
       options: [castconjure, AI OshiBloom, Either]
+  - type: dropdown
+    id: lang
+    attributes:
+      label: Your language
+      options: [English, 日本語, 한국어, 中文, other]
   - type: dropdown
     id: today
     attributes:
@@ -26,6 +31,7 @@ body:
         - label: Super Chat / Bits mapped to special reactions
         - label: Twitch alongside YouTube
         - label: Per-stream numbers and automatic Board report
+        - label: Multilingual replies and automatic Board reach reporting
   - type: textarea
     id: note
     attributes: { label: Anything else }

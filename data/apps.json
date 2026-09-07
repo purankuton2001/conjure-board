@@ -33,7 +33,7 @@
     "audience": "First-time AI VTuber makers, UI-first people, developers curious about continuous generation",
     "redditEntry": ["r/VirtualYoutubers (first stream)", "r/aivideo (continuous live)"],
     "weaknesses": ["Director capped at 120 s", "Voice consistency not guaranteed", "Director cost is outside the in-app meter"],
-    "sessionLog": "JSONL export (parity item)",
+    "sessionLog": "JSONL export (parity item, see strategy/parity.md)",
     "personaFormat": "persona folder",
     "accentParam": "studio theme color"
   }

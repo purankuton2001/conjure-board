@@ -9,7 +9,8 @@
     { "label": "Tests",               "castconjure": "10",                       "ai-oshibloom": "18" },
     { "label": "Continuous live",     "castconjure": "Measured, then declined",  "ai-oshibloom": "Implemented and shipped" },
     { "label": "Reply providers",     "castconjure": "anthropic / gemini / openai", "ai-oshibloom": "openai / fal" },
-    { "label": "Written by",          "castconjure": "Claude Fable 5.1",         "ai-oshibloom": "GPT-6" }
+    { "label": "Written by",          "castconjure": "Claude Fable 5.1",         "ai-oshibloom": "GPT-6" },
+    { "label": "Anime style",         "castconjure": "Preset pending (F-10)",    "ai-oshibloom": "Verified on the OshiBloom side (2026-09-07); clip and numbers to be added" }
   ],
   "streams": [
     { "id": "2",  "title": "Stream #2 (matched)",  "design": "castconjure replies with Fable 5.1, OshiBloom replies with GPT-6. Code and replies from the same model. Viewer vote + JSONL.", "status": "planned", "week": "W3", "vote": null },

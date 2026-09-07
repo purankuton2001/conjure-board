@@ -9,7 +9,7 @@
     "status": { "enum": ["pending", "accepted", "held"] },
     "app": { "enum": ["castconjure", "ai-oshibloom"] },
     "external": { "type": "boolean" },
-    "streamer": { "type": "object", "required": ["name"], "properties": { "name": { "type": "string" }, "handle": { "type": "string" }, "url": { "type": "string" } } },
+    "streamer": { "type": "object", "required": ["name"], "properties": { "name": { "type": "string" }, "handle": { "type": "string" }, "url": { "type": "string" }, "lang": { "type": ["string", "null"], "description": "Creator's own language (ISO 639-1, e.g. ja); basis of the global-reach share" } } },
     "persona": { "type": "object", "required": ["name"], "properties": { "name": { "type": "string" }, "folder": { "type": "string" }, "accent": { "type": "string" }, "bundled": { "type": "boolean" } } },
     "stream_url": { "type": "string", "pattern": "^https://" },
     "clip_url": { "type": ["string", "null"] },
@@ -19,6 +19,7 @@
       "required": ["reactions", "cost_usd"],
       "properties": {
         "reactions": { "type": "integer", "minimum": 0 },
+        "languages": { "type": ["object", "null"], "description": "Reactions by reply/comment language from gen_start.lang, e.g. {\"en\":40,\"ko\":10,\"ja\":5}" },
         "acks": { "type": ["integer", "null"] },
         "median_latency_ms": { "type": ["integer", "null"] },
         "p90_latency_ms": { "type": ["integer", "null"] },
