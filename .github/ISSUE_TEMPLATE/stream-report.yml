@@ -8,9 +8,6 @@ body:
       value: |
         A person checks every report before it appears on the Board (weekly at first). Numbers come second; the four pledges come first.
         Field names below are read by a script — please keep the structure.
-
-        **This is a public repository. Everything you paste here is visible to anyone.**
-        Before attaching a session log, remove every API key or token (fal, OpenAI, Anthropic, YouTube, ...), channel IDs and viewer names you do not want published. Reports that contain a key are deleted without notice; rotate the key immediately if you posted one.
   - type: dropdown
     id: app
     attributes:
@@ -32,7 +29,7 @@ body:
     id: session_log
     attributes:
       label: Session log
-      description: "castconjure: data/logs/session-*.jsonl. OshiBloom: the JSONL export. Drag the file here. REMOVE ALL API KEYS, TOKENS AND VIEWER NAMES FIRST: this issue is public and logs containing a key are deleted without notice."
+      description: "castconjure: attach data/logs/session-*.jsonl (remove keys). OshiBloom: the JSONL export. Drag the file here."
       render: text
     validations: { required: true }
   - type: input

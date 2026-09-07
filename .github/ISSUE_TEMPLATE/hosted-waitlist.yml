@@ -1,0 +1,31 @@
+name: Hosted waitlist
+description: Tell us you would use a hosted version (no fal key, prepaid credits). Submitting as-is is enough.
+title: "waitlist: "
+labels: [waitlist]
+body:
+  - type: markdown
+    attributes:
+      value: Nothing is built yet. This only counts interest. You can submit without filling anything in.
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app
+      options: [castconjure, AI OshiBloom, Either]
+  - type: dropdown
+    id: today
+    attributes:
+      label: How do you generate today
+      options: [fal (paid), Local GPU, Not streaming yet]
+  - type: checkboxes
+    id: wants
+    attributes:
+      label: What would make you pay
+      options:
+        - label: No fal account, reactions from prepaid credits
+        - label: My character stored and synced (more than one idol)
+        - label: Super Chat / Bits mapped to special reactions
+        - label: Twitch alongside YouTube
+        - label: Per-stream numbers and automatic Board report
+  - type: textarea
+    id: note
+    attributes: { label: Anything else }
