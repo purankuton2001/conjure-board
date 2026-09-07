@@ -16,7 +16,7 @@ export function resolveLanguage(preferences = []) {
 }
 
 if (typeof document !== 'undefined') {
-  const key = 'same-spec-lang';
+  const key = 'conjure-board-lang';
   function setLanguage(language) {
     const selected = resolveLanguage([language]);
     document.documentElement.lang = selected;

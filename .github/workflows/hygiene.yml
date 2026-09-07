@@ -1,0 +1,14 @@
+name: hygiene
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  public-repo-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # the check reads every commit
+      - run: bash scripts/check-public-hygiene.sh
